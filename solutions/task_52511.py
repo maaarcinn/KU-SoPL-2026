@@ -21,7 +21,8 @@ def solve(id: str) -> int:
     Your id is passed as a string.
     Return an integer.
     """
-    pass
+    clean_id = id.split("-ex")[0]
+    return clean_id.count("1")
 
 
 if __name__ == "__main__":
